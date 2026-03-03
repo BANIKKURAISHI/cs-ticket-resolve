@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login page not loading",
+    "description": "Customer is unable to access the login page after clicking the login button. The page keeps loading continuously without showing any error message.",
+    "customer": "Rahim Uddin",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 2,
+    "title": "Payment gateway error",
+    "description": "Payment fails during the checkout process when using a Visa card. The transaction is declined without a clear explanation or retry option.",
+    "customer": "Karim Hossain",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 3,
+    "title": "Profile image upload issue",
+    "description": "Customer cannot upload a profile picture and receives a server error message. The upload progress stops midway without completing.",
+    "customer": "Nusrat Jahan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 4,
+    "title": "Password reset email not received",
+    "description": "User requested a password reset link but did not receive any email. The system shows a success message but no mail arrives in inbox or spam.",
+    "customer": "Arif Khan",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-02-28"
+  },
+  {
+    "id": 5,
+    "title": "Slow dashboard loading",
+    "description": "Dashboard takes more than 10 seconds to load after login. Charts and ticket data appear delayed causing inconvenience to users.",
+    "customer": "Sadia Islam",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 6,
+    "title": "404 error on product page",
+    "description": "Product page shows a 404 error when accessed from the homepage. Direct link works sometimes but navigation fails frequently.",
+    "customer": "Imran Ali",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 7,
+    "title": "Mobile responsiveness issue",
+    "description": "Website layout breaks on small screen devices and some elements overlap. Buttons are not properly aligned on mobile view.",
+    "customer": "Tania Akter",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 8,
+    "title": "Search functionality not working",
+    "description": "Search bar does not return any relevant results even when valid keywords are entered. It sometimes shows an empty result list.",
+    "customer": "Mehedi Hasan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 9,
+    "title": "Notification not showing",
+    "description": "Toast notification does not appear after successful form submission. Users are unsure whether their action was completed.",
+    "customer": "Farhana Yasmin",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-02-27"
+  },
+  {
+    "id": 10,
+    "title": "Error while updating profile",
+    "description": "Customer receives an unknown error message while updating profile information. The changes are not saved after submission.",
+    "customer": "Jahidul Islam",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 11,
+    "title": "Cart items disappearing",
+    "description": "Items are automatically removed from the cart after refreshing the page. The cart count resets unexpectedly.",
+    "customer": "Sumaiya Rahman",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 12,
+    "title": "API data not fetching",
+    "description": "Frontend is not receiving ticket data from the backend API. Network tab shows a failed response with status code 500.",
+    "customer": "Shakil Ahmed",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 13,
+    "title": "Broken image links",
+    "description": "Some images are not loading properly on the homepage. Placeholder icons are shown instead of actual product images.",
+    "customer": "Mim Akter",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-02-26"
+  },
+  {
+    "id": 14,
+    "title": "Incorrect total calculation",
+    "description": "Total price calculation during checkout is incorrect when multiple items are added. Discount values are not applied correctly.",
+    "customer": "Rafiq Hasan",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 15,
+    "title": "Language switch not working",
+    "description": "Changing the language from settings does not update the text content immediately. Some sections remain in the previous language.",
+    "customer": "Lamia Chowdhury",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  }
+]
