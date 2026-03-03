@@ -3,6 +3,7 @@ import Banner from "./Component/Banner/Banner";
 import Navbar from "./Component/Nav and Footer/Navbar";
 import Tickets from "./Component/Ticket/Tickets";
 import Tasks from "./Component/Task/Tasks";
+import Resolved from "./Component/Resolved/Resolved";
 
 const customersFetch=async()=>{
   const res=await fetch("/customers.json")
@@ -13,15 +14,21 @@ const fetchData=customersFetch()
 
 function App() {
 const [problems,setProblems]=useState([])
+const [solved,setSolved]=useState([])
 const handleProblems=(ticket)=>{
 const problemArray=([...problems,ticket])
 setProblems(problemArray)
 }
 
+const solvedButton=(done)=>{
+  const totalSolved=([...solved,done])
+ setSolved(totalSolved)
+}
+
   return (
     <>
       <Navbar></Navbar>
-      <Banner problems={problems}></Banner>
+      <Banner problems={problems} solved={solved}></Banner>
       <div className="w-11/12 flex mx-auto flex-col md:flex-row ">
         <div className="max-w-2/3">
       <Suspense
@@ -41,8 +48,9 @@ setProblems(problemArray)
 
       <div className="ml-10 ">
         <h1 className="font-medium  text-4xl text-shadow-cyan-900 ">Task Status </h1>
-        <Tasks problems={problems}></Tasks>
-        <h1 className="font-medium  text-4xl text-shadow-cyan-900 mt-5">Resolved Task</h1>
+        <Tasks solvedButton={solvedButton} problems={problems}></Tasks>
+        <h1 className="font-medium  text-4xl text-shadow-cyan-900 mt-5 mx-1">Resolved Task</h1>
+        <Resolved solved={solved}></Resolved>
       </div>
       </div>
     </>

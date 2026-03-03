@@ -1,6 +1,6 @@
 import React from "react";
 
-const Task = ({ problem }) => {
+const Task = ({ problem,solvedButton}) => {
  const { title } = problem;
  
 
@@ -13,7 +13,7 @@ const Task = ({ problem }) => {
           <h2 className="card-title">{title}</h2>
         </div>
 
-        <button className="btn mx-4 mb-4  bg-[#02a53b]">Complete</button>
+        <button onClick={()=>solvedButton(problem)} className="btn mx-4 mb-4  bg-[#02a53b]">Complete</button>
       </div>
     </div> 
     </>
