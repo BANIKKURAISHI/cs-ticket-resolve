@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = ({problems}) => {
 
   return (
     <div  className="w-11/12  mx-auto flex flex-col gap-8 md:flex-row justify-between m-14">
@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="flex-1 bg-gradient-to-r from-[#642fe3] via-[#8148eb] to-[#8e53ee] text-white ">
         <div  className="flex h-60 flex-col items-center justify-center text-center">
           <h1 className="font-semibold text-3xl">In-Progress</h1>
-          <p className="font-bold text-4xl">0</p>
+          <p className="font-bold text-4xl">{problems.length}</p>
         </div>
       </div>
 

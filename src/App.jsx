@@ -21,7 +21,7 @@ setProblems(problemArray)
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Banner problems={problems}></Banner>
       <div className="w-11/12 flex mx-auto flex-col md:flex-row ">
         <div className="max-w-2/3">
       <Suspense
