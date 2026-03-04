@@ -6,7 +6,7 @@ const Tickets = ({fetchData,handleProblems}) => {
     return (
         <div className='grid grid-cols-2 gap-8'>
             {
-             customers.map(ticket=><Ticket ticket={ticket} handleProblems={handleProblems}></Ticket>)   
+             customers.map(ticket=><Ticket  key={ticket.id} ticket={ticket} handleProblems={handleProblems}></Ticket>)   
             }
         </div>
     );

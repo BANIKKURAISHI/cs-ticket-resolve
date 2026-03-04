@@ -8,7 +8,7 @@ const Resolved = ({solved}) => {
     return (
         <div className='flex flex-col justify-between'>
         {
-            solved.map(sol=> {return(<div className='card card-border bg-gray-100 w-96 p-5 mb-3 mt-3'>{sol.title}</div>)})
+            solved.map(sol=> {return(<div key={sol.id} className='card card-border bg-gray-100 w-96 p-5 mb-3 mt-3'>{sol.title}</div>)})
         }
         </div>
     );

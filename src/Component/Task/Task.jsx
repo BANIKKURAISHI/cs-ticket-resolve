@@ -2,7 +2,6 @@ import React from "react";
 
 const Task = ({ problem,solvedButton}) => {
  const { title } = problem;
- 
 
 
   return (

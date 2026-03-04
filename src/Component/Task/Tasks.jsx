@@ -2,7 +2,7 @@ import React from "react";
 import Task from "./Task";
 
 const Tasks = ({ problems, solvedButton }) => {
-  console.log(problems);
+  
   if (problems.length === 0) {
     return (
       <p className="text-lg text-black m-2">
@@ -13,7 +13,7 @@ const Tasks = ({ problems, solvedButton }) => {
   return (
     <div className="flex flex-col gap-5 mt-4">
       {problems.map((problem) => (
-        <Task problem={problem} solvedButton={solvedButton}></Task>
+        <Task problem={problem} key={problem.id} solvedButton={solvedButton}></Task>
       ))}
     </div>
   );

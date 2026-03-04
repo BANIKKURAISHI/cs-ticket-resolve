@@ -7,7 +7,7 @@ const Ticket = ({ ticket ,handleProblems}) => {
   const { id, title, status, priority, description, customer, createdAt } =
     ticket;
   return (
-    <div onClick={()=>handleProblems(ticket)}>
+    <div onClick={()=>{handleProblems(ticket)}}>
       <div className="card w-[450px] h-56 bg-base-100 card-md shadow-sm p-5">
         <div className="flex flex-row justify-between ">
           <h2 className="card-title">{title}</h2>
