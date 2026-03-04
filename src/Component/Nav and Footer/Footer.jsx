@@ -5,8 +5,8 @@ import { FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 const Footer = () => {
   return (
-    <div>
-      <footer className="w-11/12 mx-auto footer sm:footer-horizontal bg-black text-white  p-10">
+    <div className="w-full mx-auto mt-10 md:w-full lg:w-full xl:w-11/12">
+      <footer className="footer sm:footer-horizontal bg-black text-white  p-10">
         <aside>
           <p className="font font-semibold text-2xl ">Cs-ticket System.</p>
           <p className="text-lg text-justify">
@@ -68,7 +68,7 @@ const Footer = () => {
         </nav>
       </footer>
 
-      <footer className="footer sm:footer-horizontal footer-center bg-black text-white text-base-content p-4">
+      <footer className="footer footer-center sm:footer-horizontal  bg-black text-white text-base-content p-4">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by CS-Ticket System 

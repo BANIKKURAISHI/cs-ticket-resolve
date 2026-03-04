@@ -38,8 +38,8 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner problems={problems} solved={solved}></Banner>
-      <div className="w-11/12 flex mx-auto flex-col md:flex-row ">
-        <div className="max-w-2/3">
+      <div className="w-11/12 flex mx-auto  flex-col-reverse md:flex-row ">
+        <div className="w-full md:max-w-2/3">
           <Suspense
             fallback={
               <p>

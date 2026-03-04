@@ -7,12 +7,12 @@ const Task = ({ problem,solvedButton}) => {
   return (
     <>
     <div>
-    <div className="card card-border bg-base-100 w-96">
+    <div className="card card-border bg-base-100 w-60 md:w-60 lg:w-96">
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
         </div>
 
-        <button onClick={()=>solvedButton(problem)} className="btn mx-4 mb-4  bg-[#02a53b]">Complete</button>
+        <button onClick={()=>solvedButton(problem)} className="btn mx-0   md:mx-4 mb-4  bg-[#02a53b]">Complete</button>
       </div>
     </div> 
     </>

@@ -5,13 +5,13 @@ const Tasks = ({ problems, solvedButton }) => {
   
   if (problems.length === 0) {
     return (
-      <p className="text-lg text-black m-2">
+      <p className="text-lg text-black m-0 md:m-2">
         Select a ticket to add to Task Status
       </p>
     );
   }
   return (
-    <div className="flex flex-col gap-5 mt-4">
+    <div className="flex  flex-col gap-5  mt-4 ">
       {problems.map((problem) => (
         <Task problem={problem} key={problem.id} solvedButton={solvedButton}></Task>
       ))}

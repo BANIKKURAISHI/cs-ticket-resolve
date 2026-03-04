@@ -6,7 +6,7 @@ const Banner = ({ problems, solved }) => {
   return (
     <div className="w-11/12  mx-auto flex flex-col gap-8 md:flex-row justify-between m-14">
       {/* Left side is complet alhamdulilah  */}
-      <div className="relative w-1/2 mx-auto h-60 rounded-2xl overflow-hidden text-white">
+      <div className="relative w-96  md:w-1/2 mx-auto h-60 rounded-2xl overflow-hidden text-white">
         <div className="absoulate inset-0 bg-gradient-to-r from-[#642fe3] via-[#8148eb] to-[#8e53ee]">
           <img
             src={victor1}
@@ -27,7 +27,7 @@ const Banner = ({ problems, solved }) => {
       </div>
 
       {/*Banner Right section side is start Now    */}
-     <div className="relative w-1/2 mx-auto h-60 rounded-2xl overflow-hidden text-white">
+     <div className="relative w-96  md:w-1/2 mx-auto h-60 rounded-2xl overflow-hidden text-white">
         <div className="absoulate inset-0 bg-gradient-to-r from-[#54cf68] via-[#25a472] to-[#0e8e77] text-white">
           <img
             src={victor1}
