@@ -4,7 +4,7 @@ import Navbar from "./Component/Nav and Footer/Navbar";
 import Tickets from "./Component/Ticket/Tickets";
 import Tasks from "./Component/Task/Tasks";
 import Resolved from "./Component/Resolved/Resolved";
-
+import { toast, ToastContainer } from "react-toastify";
 const customersFetch = async () => {
   const res = await fetch("/customers.json");
   return res.json();
@@ -13,17 +13,18 @@ const fetchData = customersFetch();
 
 function App() {
   const [problems, setProblems] = useState([]);
-
   const [solved, setSolved] = useState([]);
-
   const handleProblems = (ticket) => {
     const problemArray = [...problems, ticket];
+
     setProblems(problemArray);
+    toast("Please wait we are working now in your problems Thank You");
   };
 
   const removeResolved = (done) => {
     const filterInfo = problems.filter((rem) => rem.id !== done.id);
     setProblems(filterInfo);
+    toast("Your Problem is solve  Thank You");
   };
 
   const solvedButton = (done) => {
@@ -67,6 +68,7 @@ function App() {
           <Resolved solved={solved}></Resolved>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }
