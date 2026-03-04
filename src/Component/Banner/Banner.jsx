@@ -4,9 +4,9 @@ const Banner = ({ problems, solved }) => {
   const victor1 = "https://i.ibb.co.com/1tNhfgxf/vector1.png";
 
   return (
-    <div className="w-11/12  mx-auto flex flex-col gap-8 md:flex-row justify-between m-14">
+    <div className="w-full mx-auto flex flex-col gap-8 md:flex-row justify-between m-14 md:w-11/12 ">
       {/* Left side is complet alhamdulilah  */}
-      <div className="relative w-96  md:w-1/2 mx-auto h-60 rounded-2xl overflow-hidden text-white">
+      <div className="relative w-96   md:w-1/2 mx-auto h-60 rounded-2xl overflow-hidden text-white">
         <div className="absoulate inset-0 bg-gradient-to-r from-[#642fe3] via-[#8148eb] to-[#8e53ee]">
           <img
             src={victor1}

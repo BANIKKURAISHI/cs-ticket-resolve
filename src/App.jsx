@@ -38,6 +38,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner problems={problems} solved={solved}></Banner>
+      <h1 className="text-3xl font-bold m-4 md:m-16">Customer Tickets list</h1>
       <div className="w-11/12 flex mx-auto  flex-col-reverse md:flex-row ">
         <div className="w-full md:max-w-2/3">
           <Suspense
