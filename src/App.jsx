@@ -1,4 +1,5 @@
-import { Suspense, useState } from "react";
+import { Suspense, use , useState } from "react";
+
 import Banner from "./Component/Banner/Banner";
 import Navbar from "./Component/Nav and Footer/Navbar";
 import Tickets from "./Component/Ticket/Tickets";
@@ -12,20 +13,29 @@ const customersFetch = async () => {
 };
 const fetchData = customersFetch();
 
+
 function App() {
+  const customers=use(fetchData)
+  const [allCart,setAllCart]=useState(customers)
   const [problems, setProblems] = useState([]);
+  
   const [solved, setSolved] = useState([]);
   const handleProblems = (ticket) => {
     const problemArray = [...problems, ticket];
-
     setProblems(problemArray);
-    toast("Please wait we are working now in your problems Thank You");
+    
+    const cartDelete=allCart.filter(all=>all.id !==ticket.id)
+    setAllCart(cartDelete)
+   
+    toast("We are currently working on your problem. Please wait a moment. Thank you for your patience.");
   };
+
+ 
 
   const removeResolved = (done) => {
     const filterInfo = problems.filter((rem) => rem.id !== done.id);
     setProblems(filterInfo);
-    toast("Your Problem is solve  Thank You");
+    toast("Your issue has been resolved. If you need further assistance, please contact us again. Thank you.");
   };
 
   const solvedButton = (done) => {
@@ -53,7 +63,8 @@ function App() {
             }
           >
             <Tickets
-              fetchData={fetchData}
+             
+              allCart={allCart}
               handleProblems={handleProblems}
             ></Tickets>
           </Suspense>
@@ -63,7 +74,7 @@ function App() {
           <h1 className="font-medium  text-4xl text-shadow-cyan-900 ">
             Task Status{" "}
           </h1>
-          <Tasks solvedButton={solvedButton} problems={problems}></Tasks>
+          <Tasks  solvedButton={solvedButton} problems={problems}></Tasks>
           <h1 className="font-medium  text-4xl text-shadow-cyan-900 mt-5 mx-1">
             Resolved Task
           </h1>

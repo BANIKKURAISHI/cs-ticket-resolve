@@ -2,12 +2,15 @@ import React from "react";
 import { FaCircle } from "react-icons/fa";
 import { MdOutlineDateRange } from "react-icons/md";
 
-const Ticket = ({ ticket ,handleProblems}) => {
-
+const Ticket = ({ ticket, handleProblems }) => {
   const { id, title, status, priority, description, customer, createdAt } =
     ticket;
   return (
-    <div onClick={()=>{handleProblems(ticket)}}>
+    <div
+      onClick={() => {
+        handleProblems(ticket);
+      }}
+    >
       <div className="card w-[360px]  h-full bg-base-100 md:w-[450px] h-56 card-md shadow-sm p-5 ">
         <div className="flex flex-row justify-between ">
           <h2 className="card-title">{title}</h2>
