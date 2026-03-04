@@ -5,6 +5,7 @@ import Tickets from "./Component/Ticket/Tickets";
 import Tasks from "./Component/Task/Tasks";
 import Resolved from "./Component/Resolved/Resolved";
 import { toast, ToastContainer } from "react-toastify";
+import Footer from "./Component/Nav and Footer/Footer";
 const customersFetch = async () => {
   const res = await fetch("/customers.json");
   return res.json();
@@ -69,6 +70,7 @@ function App() {
         </div>
       </div>
       <ToastContainer />
+      <Footer></Footer>
     </>
   );
 }
