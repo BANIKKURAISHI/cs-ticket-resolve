@@ -15,3 +15,6 @@ Ans: Components share korta hole prothome akti common component ka babohar korta
 
 <!--! 5.How is event handling done in React -->
 Ans :event handle function ar maddhome amra event handling korta pari .ar bisas kore amra onClick use kori ata akta event handling kora jai .
+
+Git Hub Link : https://github.com/BANIKKURAISHI/cs-ticket-resolve.git
+Live Link : keen-skirt1234.surge.sh
